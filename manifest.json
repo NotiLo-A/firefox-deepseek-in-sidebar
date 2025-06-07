@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "ChatGPT in Sidebar",
-  "description": "Displays ChatGPT in the sidebar.",
-  "version": "1.0.3",
+  "name": "DeepSeek in Sidebar",
+  "description": "Displays DeepSeek in the sidebar.",
+  "version": "1.0.5",
   "background": {
     "scripts": ["src/background.js"]
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "{28b7b9b8-aab9-4034-8628-26d955bf7713}",
+      "id": "{43c6e9ce-a86a-4601-bbce-1e3608546335}",
       "strict_min_version": "100.0"
     }
   },
@@ -18,29 +18,29 @@
   },
   "sidebar_action": {
     "default_icon": {
-      "16": "src/icons/chatgpt-16x16.png",
-      "32": "src/icons/chatgpt-32x32.png",
-      "192": "src/icons/chatgpt-192x192.png"
+      "16": "src/icons/deepseek-16x16.png",
+      "32": "src/icons/deepseek-32x32.png",
+      "192": "src/icons/deepseek-192x192.png"
     },
-    "default_title": "ChatGPT",
+    "default_title": "DeepSeek",
     "default_panel": "src/sidebar/panel.html"
   },
   "icons": {
-    "16": "src/icons/chatgpt-16x16.png",
-    "32": "src/icons/chatgpt-32x32.png"
+    "16": "src/icons/deepseek-16x16.png",
+    "32": "src/icons/deepseek-32x32.png"
   },
   "commands": {
     "_execute_sidebar_action": {
       "suggested_key": {
-        "default": "Alt+Shift+C"
+        "default": "Alt+Shift+D"
       },
-      "description": "Toggle the ChatGPT sidebar."
+      "description": "Toggle the DeepSeek sidebar."
     }
   },
   "browser_action": {
     "default_icon": {
-      "16": "src/icons/chatgpt-16x16.png",
-      "32": "src/icons/chatgpt-32x32.png"
+      "16": "src/icons/deepseek-16x16.png",
+      "32": "src/icons/deepseek-32x32.png"
     }
   }
 }

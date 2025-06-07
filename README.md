@@ -1,4 +1,4 @@
-<h1><img src="src/icons/chatgpt.png" width="64" height="64" /> ChatGPT in Sidebar</h1>
+# <img src="src/icons/deepseek.png" width="64" height="64" /> DeepSeek in Sidebar
 
 ![Mozilla Add-on](https://img.shields.io/amo/v/{28b7b9b8-aab9-4034-8628-26d955bf7713})
 ![Add-on rating](https://img.shields.io/amo/rating/{28b7b9b8-aab9-4034-8628-26d955bf7713})
@@ -6,13 +6,13 @@
 ![Add-on users](https://img.shields.io/amo/users/{28b7b9b8-aab9-4034-8628-26d955bf7713})
 ![License](https://img.shields.io/github/license/semanticdata/firefox-chatgpt-in-sidebar)
 
-Firefox extension to display ChatGPT within the Firefox sidebar. This extension adds a new section to the sidebar which contains the ChatGPT web app. It also adds a shortcut, and a button toggle within the toolbar.
+Firefox extension to display DeepSeek within the Firefox sidebar. This extension adds a new section to the sidebar which contains the DeepSeek web app. It also adds a shortcut, and a button toggle within the toolbar.
 
 [![Get the Addon](https://raw.githubusercontent.com/semanticdata/text-revealer-firefox-extension/master/firefox.png)](https://addons.mozilla.org/en-US/firefox/addon/chatgpt-in-sidebar/)
 
 ## Usage
 
-1. Toggle the sidebar by pressing _`Alt+Shift+C`_. This shortcut can be changed by going to _`Add-ons` → `ChatGPT in Sidebar` → `Options`_.
+1. Toggle the sidebar by pressing _`Alt+Shift+D`_. This shortcut can be changed by going to _`Add-ons` → `DeepSeek in Sidebar` → `Options`_.
 2. If you prefer buttons over shortcuts, there is a toolbar button you can press to toggle the sidebar.
 
 ## How to Unlock Firefox Sidebar Width
@@ -45,7 +45,7 @@ The sidebar's width is _locked by default_ in Firefox. Unfortunately, the sideba
 
 ## ⚠ Disclaimer
 
-This extension is an independent project, has no relationship, and is not affiliated to ChatGPT in any way. This extension is primarily for personal use; a personal project if you will. This add-on <i>only</i> launches their web app in the sidebar.
+This extension is an independent project, has no relationship, and is not affiliated to DeepSeek in any way. This extension is primarily for personal use; a personal project if you will. This add-on <i>only</i> launches their web app in the sidebar.
 
 ## 💜 Acknowledgments
 
