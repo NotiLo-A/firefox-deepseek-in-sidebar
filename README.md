@@ -38,18 +38,9 @@ The sidebar's width is _locked by default_ in Firefox. Unfortunately, the sideba
 7. Finally, in a new tab, navigate to `about:config` and search for `toolkit.legacyUserProfileCustomizations.stylesheets` and change it to `true`.
 8. Restart Firefox and test it out!
 
-### 📝 Notes
-
-- You can find the canonical publication for the guide on my [Blog](https://miguelpimentel.do/unlock-firefox-sidebar/).  
-- I also have instructions in Spanish in this GitHub [Gist](https://gist.github.com/semanticdata/ee0bca4f3617241aa98da114653c0b08#file-instrucciones-md).
-
 ## ⚠ Disclaimer
 
 This extension is an independent project, has no relationship, and is not affiliated to DeepSeek in any way. This extension is primarily for personal use; a personal project if you will. This add-on <i>only</i> launches their web app in the sidebar.
-
-## 💜 Acknowledgments
-
-Icons used for all my extensions are part of [UXWing](https://uxwing.com/)'s collection. Take a look at their [license](https://uxwing.com/license).
 
 ## © License
 
