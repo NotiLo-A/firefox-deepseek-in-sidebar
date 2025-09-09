@@ -25,7 +25,8 @@
       "192": "src/icons/deepseek-192x192.png"
     },
     "default_title": "DeepSeek",
-    "default_panel": "src/sidebar/panel.html""browser_style": false
+    "default_panel": "src/sidebar/panel.html",
+    "browser_style": false
   },
   "icons": {
     "16": "src/icons/deepseek-16x16.png",
