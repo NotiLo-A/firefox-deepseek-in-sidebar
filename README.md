@@ -8,7 +8,7 @@
 
 Firefox extension to display DeepSeek within the Firefox sidebar. This extension adds a new section to the sidebar which contains the DeepSeek web app. It also adds a shortcut, and a button toggle within the toolbar.
 
-[![Get the Addon](https://raw.githubusercontent.com/semanticdata/text-revealer-firefox-extension/master/firefox.png)](https://addons.mozilla.org/en-US/firefox/addon/chatgpt-in-sidebar/)
+[![Get the Addon](https://raw.githubusercontent.com/semanticdata/text-revealer-firefox-extension/master/firefox.png)](https://addons.mozilla.org/en-US/firefox/addon/deepseek-in-sidebar/)
 
 ## Usage
 
