@@ -1,9 +1,9 @@
 # <img src="src/icons/deepseek.png" width="64" height="64" /> DeepSeek in Sidebar
 
-![Mozilla Add-on](https://img.shields.io/amo/v/{28b7b9b8-aab9-4034-8628-26d955bf7713})
-![Add-on rating](https://img.shields.io/amo/rating/{28b7b9b8-aab9-4034-8628-26d955bf7713})
-![Add-on downloads](https://img.shields.io/amo/dw/{28b7b9b8-aab9-4034-8628-26d955bf7713})
-![Add-on users](https://img.shields.io/amo/users/{28b7b9b8-aab9-4034-8628-26d955bf7713})
+![Mozilla Add-on](https://img.shields.io/amo/v/deepseek-in-sidebar)
+![Add-on rating](https://img.shields.io/amo/rating/deepseek-in-sidebar)
+![Add-on downloads](https://img.shields.io/amo/dw/deepseek-in-sidebar)
+![Add-on users](https://img.shields.io/amo/users/deepseek-in-sidebar)
 ![License](https://img.shields.io/github/license/NotiLo-A/firefox-deepseek-in-sidebar)
 
 Firefox extension to display DeepSeek within the Firefox sidebar. This extension adds a new section to the sidebar which contains the DeepSeek web app. It also adds a shortcut, and a button toggle within the toolbar.
