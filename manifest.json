@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "DeepSeek in Sidebar",
   "description": "Displays DeepSeek AI assistant in the Firefox sidebar with customizable shortcuts.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "NotiLo-A",
   "homepage_url": "https://github.com/NotiLo-A/firefox-deepseek-in-sidebar",
 
