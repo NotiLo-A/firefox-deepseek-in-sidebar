@@ -1,60 +1,42 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DeepSeek in Sidebar - Config</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
+    <title>Settings</title>
     <link rel="stylesheet" href="options.css" />
   </head>
-
   <body>
-    <section class="section">
-      <div class="container">
-        <h1 class="title">
-          <img src="./../icons/deepseek-32x32.png" alt="logo" />
+    <div class="settings-container">
+      <div
+        id="feedback"
+        class="notification"
+        style="display: none"
+        role="alert"
+      ></div>
 
-          DeepSeek<sup class="subtitle"> in the Sidebar </sup>
-        </h1>
+      <form>
+        <div class="field">
+          <label for="shortcut">Keyboard Shortcut</label>
+          <input
+            type="text"
+            id="shortcut"
+            placeholder="Alt+Shift+D"
+            aria-describedby="shortcut-help"
+          />
+          <small id="shortcut-help" class="help">
+            Use combinations like Ctrl+Shift+Key, Alt+Shift+Key, etc.
+          </small>
+        </div>
 
-        <form>
-          <label>Keyboard Shortcut</label>
-          <br />
-          <input class="input is-small is-dark" type="text" id="shortcut" />
-        </form>
-
-        <button id="update" class="button is-small is-outlined is-dark"
-          >Update</button
-        >
-
-        <button class="button is-small is-outlined is-dark" id="reset"
-          >Reset</button
-        >
-
-        <p
-          >Made with
-          <a href="https://github.com/NotiLo-A/firefox-deepseek-in-sidebar"
-            ><i class="fa fa-heart" aria-hidden="true"></i
-          ></a>
-          by
-          <a
-            class="site-author"
-            href="https://https://github.com/NotiLo-A/"
-            target="_blank"
-          >
-            NotiLo-A</a
-          >.
-        </p>
-      </div>
-    </section>
+        <div class="buttons">
+          <button type="button" id="update" class="btn-primary">Save</button>
+          <button type="button" id="reset" class="btn-secondary">
+            Reset to Default
+          </button>
+        </div>
+      </form>
+    </div>
 
     <script src="options.js"></script>
   </body>

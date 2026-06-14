@@ -1,23 +1,32 @@
 {
   "manifest_version": 2,
   "name": "DeepSeek in Sidebar",
-  "description": "Displays DeepSeek in the sidebar.",
-  "version": "1.0.5",
+  "description": "Displays DeepSeek AI assistant in the Firefox sidebar with customizable shortcuts.",
+  "version": "2.0.0",
+  "author": "NotiLo-A",
+  "homepage_url": "https://github.com/NotiLo-A/firefox-deepseek-in-sidebar",
+
   "background": {
-    "scripts": [
-      "src/background.js"
-    ]
+    "scripts": ["src/background.js"]
   },
+
   "browser_specific_settings": {
     "gecko": {
       "id": "{43c6e9ce-a86a-4601-bbce-1e3608546335}",
       "strict_min_version": "100.0"
     }
   },
+
+  "permissions": ["storage"],
+
+  "content_security_policy": "default-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; script-src 'self'; connect-src 'self' https://chat.deepseek.com; frame-src https://chat.deepseek.com; img-src 'self' data: https:;",
+
   "options_ui": {
     "page": "src/options/options.html",
-    "browser_style": true
+    "browser_style": false,
+    "open_in_tab": false
   },
+
   "sidebar_action": {
     "default_icon": {
       "16": "src/icons/deepseek-16x16.png",
@@ -28,10 +37,13 @@
     "default_panel": "src/sidebar/panel.html",
     "browser_style": false
   },
+
   "icons": {
     "16": "src/icons/deepseek-16x16.png",
-    "32": "src/icons/deepseek-32x32.png"
+    "32": "src/icons/deepseek-32x32.png",
+    "192": "src/icons/deepseek-192x192.png"
   },
+
   "commands": {
     "_execute_sidebar_action": {
       "suggested_key": {
@@ -40,10 +52,13 @@
       "description": "Toggle the DeepSeek sidebar."
     }
   },
+
   "browser_action": {
     "default_icon": {
       "16": "src/icons/deepseek-16x16.png",
       "32": "src/icons/deepseek-32x32.png"
-    }
+    },
+    "default_title": "Toggle DeepSeek Sidebar",
+    "browser_style": false
   }
 }
