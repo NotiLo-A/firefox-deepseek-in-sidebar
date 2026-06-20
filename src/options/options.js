@@ -1,5 +1,5 @@
 const sidebarToggle = "_execute_sidebar_action";
-
+// test
 function isValidShortcut(shortcut) {
   if (!shortcut || shortcut.trim() === "") return false;
 
