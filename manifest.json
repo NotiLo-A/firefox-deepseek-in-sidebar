@@ -1,25 +1,18 @@
 {
   "manifest_version": 2,
-  "name": "DeepSeek in Sidebar",
-  "description": "Displays DeepSeek AI assistant in the Firefox sidebar with customizable shortcuts.",
-  "version": "2.0.3",
-  "author": "NotiLo-A",
-  "homepage_url": "https://github.com/NotiLo-A/firefox-deepseek-in-sidebar",
+  "name": "Kimi.AI in Sidebar",
+  "description": "Displays Kimi AI assistant in the Firefox sidebar with customizable shortcuts.",
+  "version": "1.0.0",
+  "author": "Niobium62",
   "background": {
     "scripts": [
       "src/background.js"
     ]
   },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "{43c6e9ce-a86a-4601-bbce-1e3608546335}",
-      "strict_min_version": "100.0"
-    }
-  },
   "permissions": [
     "storage"
   ],
-  "content_security_policy": "default-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; script-src 'self'; connect-src 'self' https://chat.deepseek.com; frame-src https://chat.deepseek.com; img-src 'self' data: https:;",
+  "content_security_policy": "default-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; script-src 'self'; connect-src 'self' https://www.kimi.ai/; frame-src https://www.kimi.ai/; img-src 'self' data: https:;",
   "options_ui": {
     "page": "src/options/options.html",
     "browser_style": false,
@@ -27,33 +20,33 @@
   },
   "sidebar_action": {
     "default_icon": {
-      "16": "src/icons/deepseek-16x16.png",
-      "32": "src/icons/deepseek-32x32.png",
-      "192": "src/icons/deepseek-192x192.png"
+      "16": "src/icons/icon.svg",
+      "32": "src/icons/icon.svg",
+      "192": "src/icons/icon.svg"
     },
-    "default_title": "DeepSeek",
+    "default_title": "Kimi",
     "default_panel": "src/sidebar/panel.html",
     "browser_style": false
   },
   "icons": {
-    "16": "src/icons/deepseek-16x16.png",
-    "32": "src/icons/deepseek-32x32.png",
-    "192": "src/icons/deepseek-192x192.png"
+    "16": "src/icons/icon.svg",
+    "32": "src/icons/icon.svg",
+    "192": "src/icons/icon.svg"
   },
   "commands": {
     "_execute_sidebar_action": {
       "suggested_key": {
         "default": "Alt+Shift+D"
       },
-      "description": "Toggle the DeepSeek sidebar."
+      "description": "Toggle the Kimi sidebar."
     }
   },
   "browser_action": {
     "default_icon": {
-      "16": "src/icons/deepseek-16x16.png",
-      "32": "src/icons/deepseek-32x32.png"
+      "16": "src/icons/icon.svg",
+      "32": "src/icons/icon.svg"
     },
-    "default_title": "Toggle DeepSeek Sidebar",
+    "default_title": "Toggle Kimi Sidebar",
     "browser_style": false
   }
 }
