@@ -18,7 +18,7 @@
   "license": "MIT",
   "homepage": "https://github.com/NotiLo-A/firefox-deepseek-in-sidebar",
   "devDependencies": {
-    "web-ext": "^8.4.0"
+    "web-ext": "^10.8.0"
   },
   "webExt": {
     "build": {
