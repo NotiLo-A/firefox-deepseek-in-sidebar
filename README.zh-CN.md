@@ -1,4 +1,4 @@
-##### README Languages:
+##### README 语言：
 [![English](https://img.shields.io/badge/English-lightgrey)](README.md) &nbsp; 
 [![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-4d6eff)](README.zh-CN.md) &nbsp;
 [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-lightgrey)](README.ru.md) 
