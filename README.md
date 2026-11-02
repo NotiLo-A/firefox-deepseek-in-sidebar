@@ -1,3 +1,5 @@
+<kbd>English</kbd> / <kbd>[Chinese](README.zh-CN.md)</kbd>
+
 # <img src="src/icons/deepseek.png" width="64" height="64" /> DeepSeek in Sidebar
 
 ![Mozilla Add-on](https://img.shields.io/amo/v/deepseek-in-sidebar)
