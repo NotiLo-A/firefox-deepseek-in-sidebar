@@ -1,4 +1,8 @@
-<kbd>English</kbd> / <kbd>[Chinese](README.zh-CN.md)</kbd>
+##### README Languages:
+[![English](https://img.shields.io/badge/English-4d6eff)](README.md) &nbsp; 
+[![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-lightgrey)](README.zh-CN.md) &nbsp;
+[![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-lightgrey)](README.ru.md)  
+
 
 # <img src="src/icons/deepseek.png" width="64" height="64" /> DeepSeek in Sidebar
 
