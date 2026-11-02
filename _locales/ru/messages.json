@@ -1,0 +1,83 @@
+{
+  "extensionName": {
+    "message": "DeepSeek в боковой панели",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Отображает ИИ-ассистента DeepSeek в боковой панели Firefox с настраиваемыми горячими клавишами.",
+    "description": "Extension description"
+  },
+  "toggleSidebarCommand": {
+    "message": "Открыть или скрыть боковую панель DeepSeek.",
+    "description": "Command shortcut description"
+  },
+  "toggleSidebarTitle": {
+    "message": "Переключить боковую панель DeepSeek",
+    "description": "Toolbar button tooltip title"
+  },
+  "sidebarTitle": {
+    "message": "DeepSeek",
+    "description": "Sidebar title"
+  },
+  "settingsTitle": {
+    "message": "Настройки",
+    "description": "Options page title"
+  },
+  "keyboardShortcutLabel": {
+    "message": "Горячая клавиша",
+    "description": "Label for shortcut input"
+  },
+  "keyboardShortcutHelp": {
+    "message": "Нажмите на поле и зажмите нужную комбинацию (например Alt+Shift+D). Очистите поле, чтобы отключить.",
+    "description": "Helper text for shortcut input"
+  },
+  "shortcutKeyCapturePrompt": {
+    "message": "Нажмите комбинацию клавиш...",
+    "description": "Placeholder while capturing shortcut keys"
+  },
+  "saveButton": {
+    "message": "Сохранить",
+    "description": "Save shortcut button"
+  },
+  "resetButton": {
+    "message": "Сбросить по умолчанию",
+    "description": "Reset shortcut to default button"
+  },
+  "openFirefoxShortcutsButton": {
+    "message": "Управление в настройках Firefox",
+    "description": "Button to open Firefox native shortcut settings"
+  },
+  "feedbackSuccess": {
+    "message": "Горячая клавиша успешно сохранена!",
+    "description": "Feedback message when shortcut is saved"
+  },
+  "feedbackReset": {
+    "message": "Сброшено к комбинации по умолчанию",
+    "description": "Feedback message when shortcut is reset"
+  },
+  "feedbackErrorInvalid": {
+    "message": "Неверный формат комбинации! Пример: Alt+Shift+D (должен содержать Ctrl или Alt)",
+    "description": "Feedback message when shortcut is invalid"
+  },
+  "feedbackErrorUpdate": {
+    "message": "Ошибка при обновлении горячей клавиши",
+    "description": "Feedback message when update fails"
+  },
+  "feedbackErrorLoad": {
+    "message": "Ошибка загрузки настроек",
+    "description": "Feedback message when loading fails"
+  },
+  "loadingTitle": {
+    "message": "Подключение к DeepSeek...",
+    "description": "Sidebar preloader title"
+  },
+  "retryButton": {
+    "message": "Повторить",
+    "description": "Preloader retry button"
+  },
+  "openInTabButton": {
+    "message": "Открыть в новой вкладке",
+    "description": "Preloader open in new tab button"
+  }
+}
+

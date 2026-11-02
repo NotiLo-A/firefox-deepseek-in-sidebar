@@ -1,0 +1,41 @@
+{
+  "name": "deepseek-in-sidebar",
+  "version": "3.0.0",
+  "description": "Displays DeepSeek AI assistant in the Firefox sidebar with customizable shortcuts.",
+  "scripts": {
+    "lint": "web-ext lint",
+    "build": "web-ext build --overwrite-dest",
+    "start": "web-ext run"
+  },
+  "keywords": [
+    "firefox",
+    "webextension",
+    "deepseek",
+    "sidebar",
+    "ai"
+  ],
+  "author": "NotiLo-A",
+  "license": "MIT",
+  "homepage": "https://github.com/NotiLo-A/firefox-deepseek-in-sidebar",
+  "devDependencies": {
+    "web-ext": "^8.4.0"
+  },
+  "webExt": {
+    "build": {
+      "overwriteDest": true
+    },
+    "ignoreFiles": [
+      "package.json",
+      "package-lock.json",
+      "yarn.lock",
+      ".github",
+      ".github/**",
+      ".gitattributes",
+      ".gitignore",
+      "LICENSE",
+      "README*.md",
+      "assets",
+      "assets/**"
+    ]
+  }
+}

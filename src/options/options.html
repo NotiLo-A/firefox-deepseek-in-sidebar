@@ -1,38 +1,55 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings</title>
+    <title data-i18n="settingsTitle">Settings</title>
+    <link rel="icon" type="image/png" href="../icons/deepseek-32x32.png" />
     <link rel="stylesheet" href="options.css" />
   </head>
   <body>
-    <div class="settings-container">
-      <div
-        id="feedback"
-        class="notification"
-        style="display: none"
-        role="alert"
-      ></div>
+    <div
+      id="feedback"
+      class="notification is-hidden"
+      role="alert"
+      aria-live="polite"
+    ></div>
 
-      <form>
+    <div class="settings-container">
+      <form id="settings-form">
         <div class="field">
-          <label for="shortcut">Keyboard Shortcut</label>
+          <label for="shortcut" data-i18n="keyboardShortcutLabel">Keyboard Shortcut</label>
           <input
             type="text"
             id="shortcut"
             placeholder="Alt+Shift+D"
+            autocomplete="off"
+            spellcheck="false"
             aria-describedby="shortcut-help"
+            data-i18n="shortcutKeyCapturePrompt"
           />
-          <small id="shortcut-help" class="help">
-            Use combinations like Ctrl+Shift+Key, Alt+Shift+Key, etc.
+          <small id="shortcut-help" class="help" data-i18n="keyboardShortcutHelp">
+            Click the field and press your key combination (e.g. Alt+Shift+D). Clear the field to remove shortcut.
           </small>
         </div>
 
         <div class="buttons">
-          <button type="button" id="update" class="btn-primary">Save</button>
-          <button type="button" id="reset" class="btn-secondary">
+          <button type="submit" id="update" class="btn btn-primary" data-i18n="saveButton">
+            Save
+          </button>
+          <button type="button" id="reset" class="btn btn-secondary" data-i18n="resetButton">
             Reset to Default
+          </button>
+        </div>
+
+        <div class="external-links">
+          <button
+            type="button"
+            id="open-firefox-shortcuts"
+            class="btn btn-link"
+            data-i18n="openFirefoxShortcutsButton"
+          >
+            Manage in Firefox Settings
           </button>
         </div>
       </form>

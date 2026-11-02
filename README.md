@@ -3,8 +3,7 @@
 [![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-lightgrey)](README.zh-CN.md) &nbsp;
 [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-lightgrey)](README.ru.md)  
 
-
-# <img src="src/icons/deepseek.png" width="64" height="64" /> DeepSeek in Sidebar
+# <img src="assets/deepseek.png" width="64" height="64" /> DeepSeek in Sidebar
 
 ![Mozilla Add-on](https://img.shields.io/amo/v/deepseek-in-sidebar)
 ![Add-on rating](https://img.shields.io/amo/rating/deepseek-in-sidebar)
@@ -21,28 +20,13 @@ Firefox extension to display DeepSeek within the Firefox sidebar. This extension
 1. Toggle the sidebar by pressing _`Alt+Shift+D`_. This shortcut can be changed by going to _`Add-ons` → `DeepSeek in Sidebar` → `Options`_.
 2. If you prefer buttons over shortcuts, there is a toolbar button you can press to toggle the sidebar.
 
-## How to Unlock Firefox Sidebar Width
+## Local Installation / Development
 
-The sidebar's width is _locked by default_ in Firefox. Unfortunately, the sidebar is very restrictive and I can only do so much to enhance the functionality of this extension. I put together a step-by-step guide on how to unlock it.
+If you cloned this repository's source code and want to load it yourself (instead of installing from the store), there are three ways:
 
-### Step-by-Step Instructions
-
-1. In a new tab, navigate to `about:support`.
-2. Under _Application Basics_, find _Profile Folder_.
-3. Locate and click the `Open Folder` button next to it. It will be next to an address similar to: `%appdata%\Mozilla\Firefox\Profiles\{profile-id}.default`.
-4. Inside your Firefox _Profile Folder_, create a new folder named: `chrome`.
-5. Inside the newly created chrome folder, create a new file named: `userChrome.css`.
-6. Copy the following code, paste as content and save:
-
-```css
-#sidebar-box {
-  max-width: 40% !important;
-  min-width: 300px !important;
-}
-```
-
-7. Finally, in a new tab, navigate to `about:config` and search for `toolkit.legacyUserProfileCustomizations.stylesheets` and change it to `true`.
-8. Restart Firefox and test it out!
+1. **Temporary loading (recommended for debugging)**: Open Firefox, navigate to `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on...", and select the `manifest.json` file in this repository. Once loaded, DeepSeek will appear in the sidebar (this temporary loading expires after Firefox restarts).
+2. **Store installation**: Go to [Mozilla Add-ons](https://addons.mozilla.org/en-US/firefox/addon/deepseek-in-sidebar/) to install the official release.
+3. **web-ext tool**: Run `npm start` or `npx web-ext run` (requires Node.js environment) in the project root to automatically launch Firefox and load the extension.
 
 ## ⚠ Disclaimer
 

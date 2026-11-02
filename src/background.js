@@ -1,41 +1,28 @@
-const sidebarToggle = "_execute_sidebar_action";
+/**
+ * Background script for DeepSeek in Sidebar extension.
+ */
 
-async function updateUI() {
+const DEEPSEEK_URL = "https://chat.deepseek.com/";
+
+async function initSidebar() {
   try {
-    let commands = await browser.commands.getAll();
-    for (const command of commands) {
-      if (command.name === sidebarToggle) {
-        document.querySelector("#shortcut").value = command.shortcut;
-      }
-    }
+    await browser.sidebarAction.setPanel({ panel: DEEPSEEK_URL });
   } catch (error) {
-    console.error("Error updating UI:", error);
+    console.error("Error setting sidebar panel:", error);
   }
 }
 
-async function openSidebar() {
+async function toggleSidebar() {
   try {
     await browser.sidebarAction.toggle();
-
-    const isOpen = await browser.sidebarAction.isOpen({});
-    await browser.storage.local.set({ sidebarOpen: isOpen });
   } catch (error) {
-    console.error("Error toggling sidebar:", error);
+    console.error("Error toggling DeepSeek sidebar:", error);
   }
 }
 
-browser.runtime.onStartup.addListener(async () => {
-  try {
-    const { sidebarOpen } = await browser.storage.local.get("sidebarOpen");
-    const currentlyOpen = await browser.sidebarAction.isOpen({});
+// Set DeepSeek URL directly on startup and installation so sidebar opens it instantly
+initSidebar();
+browser.runtime.onInstalled.addListener(initSidebar);
+browser.runtime.onStartup.addListener(initSidebar);
 
-    if (sidebarOpen && !currentlyOpen) {
-      await browser.sidebarAction.open();
-    }
-  } catch (error) {
-    console.error("Error restoring sidebar state:", error);
-  }
-});
-
-browser.browserAction.onClicked.addListener(openSidebar);
-document.addEventListener("DOMContentLoaded", updateUI);
+browser.action.onClicked.addListener(toggleSidebar);

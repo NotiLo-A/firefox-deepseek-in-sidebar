@@ -5,6 +5,9 @@ on:
     tags:
       - "v*.*.*"
 
+permissions:
+  contents: write
+
 jobs:
   build-release:
     runs-on: ubuntu-latest
@@ -25,9 +28,13 @@ jobs:
             "package-lock.json",
             "yarn.lock",
             ".github",
+            ".github/**",
             ".gitattributes",
+            ".gitignore",
             "LICENSE",
-            "README.md"]'
+            "README*.md",
+            "assets",
+            "assets/**"]'
 
       - name: Sign
         id: web-ext-sign
@@ -45,4 +52,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: ${{ steps.web-ext-sign.outputs.target }}
+          files: |
+            ${{ steps.web-ext-sign.outputs.target }}
+            ${{ steps.web-ext-build.outputs.target }}

@@ -1,0 +1,83 @@
+{
+  "extensionName": {
+    "message": "侧边栏中的 DeepSeek",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "在 Firefox 侧边栏中显示 DeepSeek AI 助手，支持自定义快捷键。",
+    "description": "Extension description"
+  },
+  "toggleSidebarCommand": {
+    "message": "切换 DeepSeek 侧边栏显示状态。",
+    "description": "Command shortcut description"
+  },
+  "toggleSidebarTitle": {
+    "message": "切换 DeepSeek 侧边栏",
+    "description": "Toolbar button tooltip title"
+  },
+  "sidebarTitle": {
+    "message": "DeepSeek",
+    "description": "Sidebar title"
+  },
+  "settingsTitle": {
+    "message": "设置",
+    "description": "Options page title"
+  },
+  "keyboardShortcutLabel": {
+    "message": "快捷键",
+    "description": "Label for shortcut input"
+  },
+  "keyboardShortcutHelp": {
+    "message": "点击输入框并按下所需的组合键（例如 Alt+Shift+D）。清空输入框可禁用快捷键。",
+    "description": "Helper text for shortcut input"
+  },
+  "shortcutKeyCapturePrompt": {
+    "message": "按下组合键...",
+    "description": "Placeholder while capturing shortcut keys"
+  },
+  "saveButton": {
+    "message": "保存",
+    "description": "Save shortcut button"
+  },
+  "resetButton": {
+    "message": "恢复默认",
+    "description": "Reset shortcut to default button"
+  },
+  "openFirefoxShortcutsButton": {
+    "message": "在 Firefox 设置中管理快捷键",
+    "description": "Button to open Firefox native shortcut settings"
+  },
+  "feedbackSuccess": {
+    "message": "快捷键更新成功！",
+    "description": "Feedback message when shortcut is saved"
+  },
+  "feedbackReset": {
+    "message": "已恢复为默认快捷键",
+    "description": "Feedback message when shortcut is reset"
+  },
+  "feedbackErrorInvalid": {
+    "message": "快捷键格式无效！示例：Alt+Shift+D（必须包含 Ctrl 或 Alt）",
+    "description": "Feedback message when shortcut is invalid"
+  },
+  "feedbackErrorUpdate": {
+    "message": "更新快捷键时出错",
+    "description": "Feedback message when update fails"
+  },
+  "feedbackErrorLoad": {
+    "message": "加载快捷键设置出错",
+    "description": "Feedback message when loading fails"
+  },
+  "loadingTitle": {
+    "message": "正在连接 DeepSeek...",
+    "description": "Sidebar preloader title"
+  },
+  "retryButton": {
+    "message": "重试",
+    "description": "Preloader retry button"
+  },
+  "openInTabButton": {
+    "message": "在新标签页中打开",
+    "description": "Preloader open in new tab button"
+  }
+}
+

@@ -1,8 +1,9 @@
 {
-  "manifest_version": 2,
-  "name": "DeepSeek in Sidebar",
-  "description": "Displays DeepSeek AI assistant in the Firefox sidebar with customizable shortcuts.",
-  "version": "2.0.3",
+  "manifest_version": 3,
+  "default_locale": "en",
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "3.0.0",
   "author": "NotiLo-A",
   "homepage_url": "https://github.com/NotiLo-A/firefox-deepseek-in-sidebar",
   "background": {
@@ -13,31 +14,43 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "{43c6e9ce-a86a-4601-bbce-1e3608546335}",
-      "strict_min_version": "100.0"
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   },
-  "permissions": [
-    "storage"
-  ],
-  "content_security_policy": "default-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; script-src 'self'; connect-src 'self' https://chat.deepseek.com; frame-src https://chat.deepseek.com; img-src 'self' data: https:;",
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; img-src 'self' data: https:;"
+  },
   "options_ui": {
     "page": "src/options/options.html",
-    "browser_style": false,
     "open_in_tab": false
   },
   "sidebar_action": {
     "default_icon": {
       "16": "src/icons/deepseek-16x16.png",
       "32": "src/icons/deepseek-32x32.png",
-      "192": "src/icons/deepseek-192x192.png"
+      "48": "src/icons/deepseek-48x48.png"
     },
-    "default_title": "DeepSeek",
-    "default_panel": "src/sidebar/panel.html",
-    "browser_style": false
+    "default_title": "__MSG_sidebarTitle__",
+    "default_panel": "src/sidebar/panel.html"
+  },
+  "action": {
+    "default_icon": {
+      "16": "src/icons/deepseek-16x16.png",
+      "32": "src/icons/deepseek-32x32.png",
+      "48": "src/icons/deepseek-48x48.png"
+    },
+    "default_title": "__MSG_toggleSidebarTitle__"
   },
   "icons": {
     "16": "src/icons/deepseek-16x16.png",
     "32": "src/icons/deepseek-32x32.png",
+    "48": "src/icons/deepseek-48x48.png",
+    "96": "src/icons/deepseek-96x96.png",
     "192": "src/icons/deepseek-192x192.png"
   },
   "commands": {
@@ -45,15 +58,7 @@
       "suggested_key": {
         "default": "Alt+Shift+D"
       },
-      "description": "Toggle the DeepSeek sidebar."
+      "description": "__MSG_toggleSidebarCommand__"
     }
-  },
-  "browser_action": {
-    "default_icon": {
-      "16": "src/icons/deepseek-16x16.png",
-      "32": "src/icons/deepseek-32x32.png"
-    },
-    "default_title": "Toggle DeepSeek Sidebar",
-    "browser_style": false
   }
 }

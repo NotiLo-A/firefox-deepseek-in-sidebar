@@ -3,7 +3,7 @@
 [![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-lightgrey)](README.zh-CN.md) &nbsp;
 [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-4d6eff)](README.ru.md)  
 
-# <img src="src/icons/deepseek.png" width="64" height="64" /> DeepSeek in Sidebar
+# <img src="assets/deepseek.png" width="64" height="64" /> DeepSeek in Sidebar
 
 ![Mozilla Add-on](https://img.shields.io/amo/v/deepseek-in-sidebar)
 ![Add-on rating](https://img.shields.io/amo/rating/deepseek-in-sidebar)
@@ -20,28 +20,13 @@
 1. Нажмите _`Alt+Shift+D`_, чтобы открыть или закрыть боковую панель. Это сочетание можно изменить в разделе _`Дополнения` → `DeepSeek in Sidebar` → `Настройки`_.
 2. Если вам удобнее кнопки, нажмите кнопку на панели инструментов, чтобы переключить боковую панель.
 
-## Как разблокировать ширину боковой панели Firefox
+## Локальная установка / Разработка
 
-По умолчанию ширина боковой панели в Firefox _заблокирована_. К сожалению, боковая панель очень ограничена, и расширение может улучшить её работу лишь отчасти. Ниже пошаговая инструкция, как снять это ограничение.
+Если вы клонировали исходный код этого репозитория и хотите загрузить его самостоятельно (а не устанавливать из магазина), есть три способа:
 
-### Пошаговая инструкция
-
-1. Откройте в новой вкладке `about:support`.
-2. В разделе _Основная информация о приложении_ (_Application Basics_) найдите _Папка профиля_ (_Profile Folder_).
-3. Нажмите кнопку `Открыть папку` (`Open Folder`) рядом с ней. Рядом будет адрес вида: `%appdata%\Mozilla\Firefox\Profiles\{profile-id}.default`.
-4. Внутри папки профиля Firefox создайте новую папку с именем `chrome`.
-5. Внутри созданной папки `chrome` создайте файл с именем `userChrome.css`.
-6. Скопируйте следующий код, вставьте его в файл и сохраните:
-
-```css
-#sidebar-box {
-  max-width: 40% !important;
-  min-width: 300px !important;
-}
-```
-
-7. Затем откройте в новой вкладке `about:config`, найдите параметр `toolkit.legacyUserProfileCustomizations.stylesheets` и установите значение `true`.
-8. Перезапустите Firefox и проверьте результат!
+1. **Временная загрузка (рекомендуется для отладки)**: откройте Firefox, перейдите по адресу `about:debugging#/runtime/this-firefox`, нажмите «Загрузить временное дополнение...» («Load Temporary Add-on») и выберите файл `manifest.json` в папке репозитория. После загрузки DeepSeek появится в боковой панели (временная загрузка сбрасывается при перезапуске Firefox).
+2. **Установка из магазина**: перейдите на [Mozilla Add-ons](https://addons.mozilla.org/en-US/firefox/addon/deepseek-in-sidebar/) для установки официальной версии.
+3. **Инструмент web-ext**: выполните `npm start` или `npx web-ext run` (требуется среда Node.js) в корневой папке проекта - это автоматически запустит Firefox и загрузит расширение.
 
 ## ⚠ Отказ от ответственности
 

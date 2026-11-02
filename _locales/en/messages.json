@@ -1,0 +1,83 @@
+{
+  "extensionName": {
+    "message": "DeepSeek in Sidebar",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Displays DeepSeek AI assistant in the Firefox sidebar with customizable shortcuts.",
+    "description": "Extension description"
+  },
+  "toggleSidebarCommand": {
+    "message": "Toggle the DeepSeek sidebar.",
+    "description": "Command shortcut description"
+  },
+  "toggleSidebarTitle": {
+    "message": "Toggle DeepSeek Sidebar",
+    "description": "Toolbar button tooltip title"
+  },
+  "sidebarTitle": {
+    "message": "DeepSeek",
+    "description": "Sidebar title"
+  },
+  "settingsTitle": {
+    "message": "Settings",
+    "description": "Options page title"
+  },
+  "keyboardShortcutLabel": {
+    "message": "Keyboard Shortcut",
+    "description": "Label for shortcut input"
+  },
+  "keyboardShortcutHelp": {
+    "message": "Click the field and press your key combination (e.g. Alt+Shift+D). Clear the field to remove shortcut.",
+    "description": "Helper text for shortcut input"
+  },
+  "shortcutKeyCapturePrompt": {
+    "message": "Press key combination...",
+    "description": "Placeholder while capturing shortcut keys"
+  },
+  "saveButton": {
+    "message": "Save",
+    "description": "Save shortcut button"
+  },
+  "resetButton": {
+    "message": "Reset to Default",
+    "description": "Reset shortcut to default button"
+  },
+  "openFirefoxShortcutsButton": {
+    "message": "Manage in Firefox Settings",
+    "description": "Button to open Firefox native shortcut settings"
+  },
+  "feedbackSuccess": {
+    "message": "Shortcut successfully updated!",
+    "description": "Feedback message when shortcut is saved"
+  },
+  "feedbackReset": {
+    "message": "Shortcut reset to default",
+    "description": "Feedback message when shortcut is reset"
+  },
+  "feedbackErrorInvalid": {
+    "message": "Invalid shortcut format! Example: Alt+Shift+D (must include Ctrl or Alt)",
+    "description": "Feedback message when shortcut is invalid"
+  },
+  "feedbackErrorUpdate": {
+    "message": "Error updating keyboard shortcut",
+    "description": "Feedback message when update fails"
+  },
+  "feedbackErrorLoad": {
+    "message": "Error loading shortcut settings",
+    "description": "Feedback message when loading fails"
+  },
+  "loadingTitle": {
+    "message": "Connecting to DeepSeek...",
+    "description": "Sidebar preloader title"
+  },
+  "retryButton": {
+    "message": "Retry",
+    "description": "Preloader retry button"
+  },
+  "openInTabButton": {
+    "message": "Open in New Tab",
+    "description": "Preloader open in new tab button"
+  }
+}
+

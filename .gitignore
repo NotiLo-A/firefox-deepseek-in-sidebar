@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build and packaging artifacts
+web-ext-artifacts/
+*.xpi
+*.zip
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
